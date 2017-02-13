@@ -2,7 +2,7 @@
 $.ajax({
 		data: {query:"daft punk"},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/track/search",
+		url:  "http://23.105.70.100/Raptor/post/track/search",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -15,7 +15,7 @@ $.ajax({
 $.ajax({
 		data: {id:"67238735"},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/track/getInfo",
+		url:  "http://23.105.70.100/Raptor/post/track/getInfo",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -28,7 +28,7 @@ $.ajax({
 $.ajax({
 		data: {id:"67238735", id_user:"-1"},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/track/download",
+		url:  "http://23.105.70.100/Raptor/post/track/download",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -41,7 +41,7 @@ $.ajax({
 $.ajax({
 		data: {id:"prueba@prueba.com"}, // Ya existe
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/user/insertUser",
+		url:  "http://23.105.70.100/Raptor/post/user/insertUser",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -54,7 +54,7 @@ $.ajax({
 $.ajax({
 		data: {id_user:-1,comentario:"Desde el servicio"},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/user/insertFAQ",
+		url:  "http://23.105.70.100/Raptor/post/user/insertFAQ",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -67,7 +67,7 @@ $.ajax({
 $.ajax({
 		data: {id_user:-1},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/user/getDownloadUser",
+		url:  "http://23.105.70.100/Raptor/post/user/getDownloadUser",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
@@ -80,7 +80,7 @@ $.ajax({
 $.ajax({
 		data: {id_user:"-1"},
 		type: "POST",
-		url:  "https://raptor-speakerblack.c9users.io/server/post/track/getSuggested",
+		url:  "http://23.105.70.100/Raptor/post/track/getSuggested",
 	})
  .done(function( data, textStatus, jqXHR ) {
  		console.log(jQuery.parseJSON(data));		
